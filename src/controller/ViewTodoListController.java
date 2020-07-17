@@ -25,11 +25,11 @@ import java.sql.Statement;
 public class ViewTodoListController {
     public JFXButton btnNewToDO;
     public ListView<String> txtToDoList;
-    public JFXButton btnToaDayList;
     public TextArea txtDescription;
     public JFXButton btnDelete;
     public Label lblDate;
     public AnchorPane root;
+    public JFXButton btnToDayList;
 
     public void initialize(){
         loadToDoList();
@@ -84,9 +84,9 @@ public class ViewTodoListController {
         primaryStage.centerOnScreen();
     }
 
-    public void btnToaDayListOnAction(ActionEvent actionEvent) {
+    public void btnDeleteOnAction(ActionEvent actionEvent) {
     }
 
-    public void btnDeleteOnAction(ActionEvent actionEvent) {
+    public void btnToDayListOnAction(ActionEvent actionEvent) {
     }
 }

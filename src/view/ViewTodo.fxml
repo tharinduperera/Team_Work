@@ -19,7 +19,7 @@
          </cursor>
       </JFXButton>
       <ListView fx:id="txtToDoList" layoutX="14.0" layoutY="55.0" prefHeight="333.0" prefWidth="211.0" />
-      <JFXButton fx:id="btnToaDayList" layoutX="57.0" layoutY="14.0" onAction="#btnToaDayListOnAction" prefHeight="38.0" prefWidth="169.0" style="-fx-background-color: #ff9900;" text="To Day List" textFill="WHITE">
+      <JFXButton fx:id="btnToDayList" layoutX="57.0" layoutY="14.0" onAction="#btnToDayListOnAction" prefHeight="38.0" prefWidth="169.0" style="-fx-background-color: #ff9900;" text="To Day List" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
