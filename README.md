@@ -4,11 +4,9 @@ To Do list is a javaFX project for dealing with daily routing
 
 ## Libraries
 
+This project uses a GUI library
 
-
-```bash
-jfeonix
-```
+* [JFoenix](http://www.jfoenix.com/) - is an open source Java library, that implements Google Material Design using Java components
 
 ## Database
 
