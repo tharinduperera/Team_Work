@@ -2,7 +2,7 @@
 
 To Do list is a javaFX project for dealing with daily routing
 
-## Dependies/Libraries
+## Libraries
 
 
 
