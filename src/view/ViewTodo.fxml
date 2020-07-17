@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.ViewTodoListController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="405.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewTodoListController">
+   <children>
+      <JFXButton fx:id="btnNewToDO" layoutX="14.0" layoutY="14.0" onAction="#btnNewToDOOnAction" prefHeight="31.0" prefWidth="29.0" style="-fx-background-color: #009933;" text="+" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ListView fx:id="txtToDoList" layoutX="14.0" layoutY="55.0" prefHeight="333.0" prefWidth="211.0" />
+      <JFXButton fx:id="btnToaDayList" layoutX="57.0" layoutY="14.0" onAction="#btnToaDayListOnAction" prefHeight="38.0" prefWidth="169.0" style="-fx-background-color: #ff9900;" text="To Day List" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextArea fx:id="txtDescription" layoutX="228.0" layoutY="56.0" prefHeight="297.0" prefWidth="447.0" />
+      <JFXButton fx:id="btnDelete" layoutX="228.0" layoutY="357.0" onAction="#btnDeleteOnAction" prefHeight="31.0" prefWidth="87.0" style="-fx-background-color: #cc0000;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="478.0" layoutY="39.0" text="Due Date :" />
+      <Label fx:id="lblDate" layoutX="551.0" layoutY="39.0" prefHeight="16.0" prefWidth="120.0" />
+   </children>
 </AnchorPane>
