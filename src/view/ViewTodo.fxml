@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="405.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewTodoListController">
+<AnchorPane fx:id="root" prefHeight="405.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewTodoListController">
    <children>
       <JFXButton fx:id="btnNewToDO" layoutX="14.0" layoutY="14.0" onAction="#btnNewToDOOnAction" prefHeight="31.0" prefWidth="29.0" style="-fx-background-color: #009933;" text="+" textFill="WHITE">
          <font>
