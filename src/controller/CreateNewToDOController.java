@@ -32,7 +32,7 @@ public class CreateNewToDOController {
             txtTitle.requestFocus();
         }else if(txtDescription.getText().isEmpty()){
             txtDescription.requestFocus();
-        }else if(datePicker.getValue().toString().isEmpty()){
+        }else if(datePicker.getValue() == null){
             datePicker.requestFocus();
         }else{
             addToDatabase();
