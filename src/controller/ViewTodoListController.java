@@ -2,6 +2,8 @@ package controller;
 
 import DBConnection.DBConnection;
 import com.jfoenix.controls.JFXButton;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -31,6 +33,25 @@ public class ViewTodoListController {
 
     public void initialize(){
         loadToDoList();
+
+        txtToDoList.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+            @Override
+            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                Connection connection = DBConnection.getInstance().getConnection();
+                String value = txtToDoList.getSelectionModel().getSelectedItem();
+                try {
+                    Statement statement = connection.createStatement();
+                    ResultSet resultSet = statement.executeQuery("select description,dueDate from todolist where title = '"+value+"'");
+
+                    if(resultSet.next()){
+                        txtDescription.setText(resultSet.getString(1));
+                    }
+                    lblDate.setText(resultSet.getString(2));
+                } catch (SQLException throwables) {
+                    throwables.printStackTrace();
+                }
+            }
+        });
     }
 
     private void loadToDoList() {
