@@ -2,18 +2,18 @@
 
 To Do list is a javaFX project for dealing with daily routing
 
-## Installation
+## Dependies/Libraries
 
 
-## Usage
 
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+```bash
+jfeonix
 ```
+
+## Database
+
+Find Database Configeration From src/Database, & set your Database Password
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
