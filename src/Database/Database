@@ -9,3 +9,9 @@ create table todolist(
     dueDate varchar(20)not null
 );
 
+create table users(
+    username varchar(100),
+    password varchar(100)
+);
+
+insert into users values('admin','admin');
